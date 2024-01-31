@@ -2,7 +2,6 @@ import mainStyles from "./MainStyles.module.css";
 import { useContext } from "react";
 import { MyContext } from "../App";
 import data from "../assets/data.json";
-import { DataInterface } from "../assets/DataInterface";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTv,
