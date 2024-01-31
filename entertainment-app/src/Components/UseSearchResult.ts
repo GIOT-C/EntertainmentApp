@@ -11,8 +11,7 @@ const UseSearchResult = (category: DataInterface[]) => {
   );
   const [numberOfResults, setNumberOfResults] = useState<number>(0);
   const showResults = contextForshowResults?.showResults || false;
-  const [dataForCategory, setDataForCategory] =
-    useState<DataInterface[]>(category);
+ 
 
   const handleSearch = () => {
     const searchTerm = searching.trim().toLowerCase();
@@ -22,7 +21,7 @@ const UseSearchResult = (category: DataInterface[]) => {
       return;
     }
 
-    const result = dataForCategory.filter((content) =>
+    const result = category.filter((content) =>
       content.title.toLowerCase().includes(searchTerm)
     );
 
